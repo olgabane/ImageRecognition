@@ -37,3 +37,5 @@ cont_norm_Processed_Image_20x20=sigmoid((Processed_Image_20x20-0.5)*10);
 %Show contrasted image
 imshow(cont_norm_Processed_Image_20x20, [-1, 1]);
 
+%Unroll image for downstream use
+Unrolled_cont_norm_Processed_Image_20x20 = reshape(cont_norm_Processed_Image_20x20, 1,size(cont_norm_Processed_Image_20x20)(1)* size(cont_norm_Processed_Image_20x20)(2));
