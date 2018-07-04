@@ -1,5 +1,6 @@
 #A Neural Network machine learning algorithm to correctly identify written numbers 
 #Parts of this code are from Andrew Ngs Machine Learning Coursera Course, Problem Set 4
+#Training set and labels are from Andrew Ngs Machine Learning Coursera Course, Problem Set 4
 #Accuracy: 99.28%
 
 #load training set
