@@ -140,7 +140,14 @@ Features = cat(1, square_mat, triangle_mat, plus_mat, circle_mat);
 #imshow(Features , [-1, 1])
 save Features.mat Features
 
+#labels matrix
+y = zeros(400, 4);
+y(1:100, 1) = 1; #square
+y(101:200, 2) = 1; #triangle
+y(201:300, 3) = 1;  #plus
+y(301:400, 4) = 1;	#circle
 
+save y.mat y
 
 #Code to save each matrix. Can be used in loop. Unused in this code.
 #matrix = Unrolled_Image; 
