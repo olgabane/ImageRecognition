@@ -85,7 +85,7 @@ end
 
 #TRAIN NEURAL NETWORK
 
-options = optimset('MaxIter', 200); #Try different values
+options = optimset('MaxIter', 100); #Try different values
 lambda = 1;	#Try different values
 
 #Parameters required for fmincg() to train neural network
@@ -141,5 +141,8 @@ predictions = predict(Theta1, Theta2, X);
 #convert labels matrix to vector of 1-4;
 y_labs = [repmat(1, 100, 1); repmat(2, 100, 1); repmat(3, 100, 1); repmat(4, 100, 1)];
 
-accuracy = sum(predictions == y_labs)/size(X,1) * 100;
+accuracy = sum(predictions == y_labs)/size(X,1) * 100
+
+#Notes after implementation
+# 'MaxIter' = 100, lambda = 1 results in accuracy of 100%
 
