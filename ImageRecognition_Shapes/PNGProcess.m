@@ -1,4 +1,4 @@
-#Process training set images
+#Summary: Process training and test set images
 
 #Process square images
 cd Square/
@@ -299,8 +299,6 @@ y_test(25:36, 2) = 1;  #triangle
 y_test(37:48, 1) = 1;	#square
 
 save y_test.mat y_test;
-
-
 
 #Code to save each matrix. Can be used in loop. Unused in this code.
 #matrix = Unrolled_Image; 
