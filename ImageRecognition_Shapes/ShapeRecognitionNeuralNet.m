@@ -37,7 +37,6 @@ m = size(X, 1);
 for i = 1:num_labels
     J(:,i) = (1/m) * (-(log(h))'*y(:,i) - (log(1 - h))'*(1-y(:,i)));
 end
-###would be good to figure out why this works!
 J = trace(J);
               
 #Regularized cost function (do not regularize first column)
